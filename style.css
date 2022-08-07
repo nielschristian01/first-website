@@ -1,0 +1,219 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: white;
+    scroll-behavior: smooth;
+    
+}
+
+
+
+
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #e34c26;
+    font-family: 'Kanit', sans-serif;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.logo{
+    color: rgb(10, 10, 10);
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 22px;
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+
+.nav-links li{
+    list-style: none;
+}
+
+.nav-links a{
+    color: #101010;
+    text-decoration: none;
+    letter-spacing: 3px;
+    font-weight: bold;
+    font-size: 14px;
+
+}
+
+.btn-1{
+    font-family: 'Kanit', sans-serif;
+font-family: 'Poppins', sans-serif;
+    width: 100px;
+    height: 50;
+    border: none;
+    color: white;
+    background-color: #e34c26;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 0 #0a80e0;
+    transition: ease-out 0.3s;
+    scroll-behavior: smooth;
+    
+}
+
+.btn-1:hover{
+    color: white;
+    box-shadow: inset 100px 0 0 0 #0a80e0;
+
+}
+
+.btn-2{
+    font-family: 'Kanit', sans-serif;
+font-family: 'Poppins', sans-serif;
+    width: 100px;
+    height: 50;
+    border: none;
+    color: white;
+    background-color: #e34c26;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 0 #0a80e0;
+    transition: ease-out 0.3s;
+    
+}
+
+.btn-2:hover{
+    color: white;
+    box-shadow: inset 100px 0 0 0 #0a80e0;
+
+}
+
+.btn-3{
+    font-family: 'Kanit', sans-serif;
+font-family: 'Poppins', sans-serif;
+    width: 120px;
+    height: 50;
+    border: none;
+    color: white;
+    background-color: #e34c26;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 0 #0a80e0;
+    transition: ease-out 0.3s;
+    
+}
+
+.btn-3:hover{
+    color: white;
+    box-shadow: inset 120px 0 0 0 #0a80e0;
+
+}
+
+.btn-4{
+    font-family: 'Kanit', sans-serif;
+font-family: 'Poppins', sans-serif;
+    width: 100px;
+    height: 50;
+    border: none;
+    color: white;
+    background-color: #e34c26;
+    border-radius: 20px;
+    box-shadow: inset 0 0 0 0 #0a80e0;
+    transition: ease-out 0.3s;
+    
+}
+
+.btn-4:hover{
+    color: white;
+    box-shadow: inset 100px 0 0 0 #0a80e0;
+
+}
+
+
+
+
+.burger{
+    display: none;
+    cursor: pointer;
+}
+
+.burger div{
+    width: 25px;
+    height: 5px;
+    background-color: rgb(10, 10, 10);
+    margin: 5px;
+}
+
+@media screen and (max-width:1024px){
+    .nav-links{
+        width: 60%;
+    }
+}
+
+@media screen and (max-width:678px){
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color: #e34c26;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 50%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity: 0;
+    }
+    .burger{
+        display: block;
+    }
+}
+
+.nav-active{
+    transform: translateX(0%);
+}
+
+@keyframes navLinkFade{
+    from{
+        opacity: 0;
+        transform: translateX(50px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+
+    }
+}
+
+.text{
+    padding: 100px;
+}
+
+h2{
+    letter-spacing: 5px;
+}
+
+.fade-in-text {
+    animation: fadeIn 4s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+}
+
+to {
+    opacity: 1;
+}
+}
+
+
